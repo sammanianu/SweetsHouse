@@ -1,0 +1,30 @@
+.container{
+    font-family: "Comic Sans MS";
+}
+
+.col-md-10{
+    background-color: #FEF2F2;
+}
+
+.navbar-nav{
+    font-size: large;
+    font-family: "Comic Sans MS";
+}
+
+/*
+.col-md-{
+    background-color: #F5D97E;
+}
+*/
+.topic{
+    background-color: #43DDE6;
+}
+.col-md-11{
+    background-color: #F03861;
+    color: white;
+}
+
+.col-md-12{
+    background-color: #43DDE6;
+}
+
