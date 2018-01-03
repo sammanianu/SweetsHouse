@@ -40,9 +40,9 @@
 
             <!--Slide Show-->
             <div class="w3-content w3-section" style="max-width:800px;max-height: 400px">
-                <img class="mySlides" src="<?php echo base_url().'css/images/a.jpg';?>" style="width:118%;height: 90%">
-                <img class="mySlides" src="<?php echo base_url().'css/images/b.jpg';?>" style="width:118%;height: 90%">
-                <img class="mySlides" src="<?php echo base_url().'css/images/a.jpg';?>" style="width:118%;height: 90%">
+                <img class="mySlides" src="<?php echo base_url().'css/images/pastry.jpg';?>" style="width:118%;height: 90%">
+                <img class="mySlides" src="<?php echo base_url().'css/images/cupCake.jpg';?>" style="width:118%;height: 90%">
+                <img class="mySlides" src="<?php echo base_url().'css/images/cake.jpg';?>" style="width:118%;height: 90%">
             </div>
 
             <script>
@@ -205,11 +205,6 @@
                 </div>
             </div>
 
-            <div class="col-sm-5 col-md-12"  >
-                <div class="topic">
-                    <h2>----------------------------------Offers-------------------------------</h2>
-                </div>
-            </div>
 
             <div class="row">
                 <div class="col-md-6">
@@ -235,9 +230,27 @@
                         </h3>
                     </div>
                 </div>
+                <br>
             </div>
 
+            <div class="topic">
+                <h2>----------------------------------Offers-------------------------------</h2>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-5 col-md-offset-2 col-md-7">
+                    <img src="<?php echo base_url().'css/images/offer.jpg';?>" alt="Chicago" style="width:118%;height: 90%">
+                    <div class="carousel-caption">
+                        <h3 style="color: #F03861">Buy any four cup cakes &</h3>
+                        <h2 style="color: #F03861">GET ANOTHER</h2>
+                        <h3 style="color: #F03861">CupCake</h3>
+                        <h1 style="color: #F03861">FREE</h1><br>
+                        <h3 style="color: #43DDE6">Offer Valied on the</h3>
+                        <h3 style="color: #43DDE6">Wednesday & Friday January 2018</h3><br><br>
+
+                    </div>
+                </div>
+            </div>
 
             <br><br><br><br><br><br><br><br><br>
 
