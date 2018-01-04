@@ -202,14 +202,14 @@ class CI_Output {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Set Header
+	 * Set Templates
 	 *
 	 * Lets you set a server header which will be sent with the final output.
 	 *
 	 * Note: If a file is cached, headers will not be sent.
 	 * @todo	We need to figure out how to permit headers to be cached.
 	 *
-	 * @param	string	$header		Header
+	 * @param	string	$header		Templates
 	 * @param	bool	$replace	Whether to replace the old header value, if already set
 	 * @return	CI_Output
 	 */
@@ -231,7 +231,7 @@ class CI_Output {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Set Content-Type Header
+	 * Set Content-Type Templates
 	 *
 	 * @param	string	$mime_type	Extension of the file we're outputting
 	 * @param	string	$charset	Character set (default: NULL)
@@ -272,7 +272,7 @@ class CI_Output {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Get Current Content-Type Header
+	 * Get Current Content-Type Templates
 	 *
 	 * @return	string	'text/html', if not already set
 	 */
@@ -292,7 +292,7 @@ class CI_Output {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Get Header
+	 * Get Templates
 	 *
 	 * @param	string	$header
 	 * @return	string
@@ -326,7 +326,7 @@ class CI_Output {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Set HTTP Status Header
+	 * Set HTTP Status Templates
 	 *
 	 * As of version 1.7.2, this is an alias for common function
 	 * set_status_header().
@@ -775,7 +775,7 @@ class CI_Output {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Set Cache Header
+	 * Set Cache Templates
 	 *
 	 * Set the HTTP headers to match the server-side file cache settings
 	 * in order to reduce bandwidth.

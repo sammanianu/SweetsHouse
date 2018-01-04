@@ -517,9 +517,9 @@ if ( ! function_exists('url_title'))
 if ( ! function_exists('redirect'))
 {
 	/**
-	 * Header Redirect
+	 * Templates Redirect
 	 *
-	 * Header redirect in two flavors
+	 * Templates redirect in two flavors
 	 * For very fine grained control over headers, you could use the Output
 	 * Library's set_header() function.
 	 *

@@ -765,7 +765,7 @@ class CI_Email {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Add a Header Item
+	 * Add a Templates Item
 	 *
 	 * @param	string
 	 * @param	string

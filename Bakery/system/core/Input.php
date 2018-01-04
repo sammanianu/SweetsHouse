@@ -774,7 +774,7 @@ class CI_Input {
 			{
 				if (sscanf($key, 'HTTP_%s', $header) === 1)
 				{
-					// take SOME_HEADER and turn it into Some-Header
+					// take SOME_HEADER and turn it into Some-Templates
 					$header = str_replace('_', ' ', strtolower($header));
 					$header = str_replace(' ', '-', ucwords($header));
 
@@ -789,11 +789,11 @@ class CI_Input {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Get Request Header
+	 * Get Request Templates
 	 *
 	 * Returns the value of a single member of the headers class member
 	 *
-	 * @param	string		$index		Header name
+	 * @param	string		$index		Templates name
 	 * @param	bool		$xss_clean	Whether to apply XSS filtering
 	 * @return	string|null	The requested header on success or NULL on failure
 	 */

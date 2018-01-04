@@ -475,7 +475,7 @@ if ( ! function_exists('log_message'))
 if ( ! function_exists('set_status_header'))
 {
 	/**
-	 * Set HTTP Status Header
+	 * Set HTTP Status Templates
 	 *
 	 * @param	int	the status code
 	 * @param	string
@@ -538,7 +538,7 @@ if ( ! function_exists('set_status_header'))
 				426	=> 'Upgrade Required',
 				428	=> 'Precondition Required',
 				429	=> 'Too Many Requests',
-				431	=> 'Request Header Fields Too Large',
+				431	=> 'Request Templates Fields Too Large',
 
 				500	=> 'Internal Server Error',
 				501	=> 'Not Implemented',
