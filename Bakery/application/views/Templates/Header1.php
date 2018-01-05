@@ -39,6 +39,7 @@
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Wedding">Wedding</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Birthday">Birthday</a></li>
                     </ul>
-                </li>                <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>About Us</a></li>
+                </li>
                 <li><a href="<?php echo base_url();?>index.php/Welcome/Instructions">Instructions</a></li>
+                <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>About Us</a></li>
             </ul>
