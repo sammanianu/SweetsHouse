@@ -25,7 +25,7 @@
             <ul class="nav navbar-nav" >
                 <li><a href='<?php echo base_url();?>index.php/Welcome/Home'>Home<span class="sr-only">(current)</span></a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Cakes">Cakes</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/CupCakes">Cup Cakes</a></li>
@@ -33,7 +33,12 @@
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Breads">Breads</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Occasions</a></li>
-                <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Occasions<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/Wedding">Wedding</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/Birthday">Birthday</a></li>
+                    </ul>
+                </li>                <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>About Us</a></li>
                 <li><a href="<?php echo base_url();?>index.php/Welcome/Instructions">Instructions</a></li>
             </ul>

@@ -2,7 +2,7 @@
 
 <br><br><br>
 <div class="topic">
-    <h2>------------------------------Cup Cakes----------------------------------</h2>
+    <h2>-------------------------Birthday Cakes---------------------------------</h2>
 </div>
 
 <div class="row" >
@@ -10,9 +10,9 @@
     <div class="col-sm-5 col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Vanilla Bean</h3>
+                <h3>BC001</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/vanilaBean.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc001.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -22,9 +22,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Chocolate Ganache</h3>
+                <h3>BC002</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/chocolateGanache.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc002.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -34,9 +34,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Red Velvet</h3>
+                <h3>BC003</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/redVelvet.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc003.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -49,9 +49,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Cookies & Cream</h3>
+                <h3>BC004</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/cookiesNcream.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc004.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -61,9 +61,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Vanilla Raspberry</h3>
+                <h3>BC005</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/vanillaRaspberry.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc005.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -73,9 +73,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Sweet Coconut</h3>
+                <h3>BC006</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/sweetCoconut.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc006.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -89,9 +89,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Carrot</h3>
+                <h3>BC007</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/carrot.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc007.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -101,9 +101,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Chocolate Mocha</h3>
+                <h3>BC008</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/chocolateMocha.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc008.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
@@ -113,9 +113,9 @@
     <div class="col-md-4">
         <div class="col-sm-5 col-md-offset-1 col-md-11">
             <div class="gallery">
-                <h3>Lemon Raspberry</h3>
+                <h3>BC009</h3>
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/CupCakes/lemonRaspberry.jpg';?>" width="240" height="200">
+                    <img src="<?php echo base_url().'css/images/Birthday/bc009.jpg';?>" width="240" height="200">
                 </a>
             </div>
             <br>
