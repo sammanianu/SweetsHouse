@@ -21,6 +21,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('Home');
+
 	}
     public function Home()
     {
@@ -29,27 +30,43 @@ class Welcome extends CI_Controller {
 
     public function AboutUs()
     {
-        $this->load->view('AboutUs');
+/*        $this->load->view('AboutUs');*/
+
+        $this->load->model('ShoppingCart');
+        $data["product"] = $this->ShoppingCart->fetch_all();
+        $this->load->view("AboutUs",$data);
     }
 
     public function Cakes()
     {
-        $this->load->view('Cakes');
-    }
+        $this->load->model('ShoppingCart');
+        $data["cakes"] = $this->ShoppingCart->fetch_cakes();
+        $this->load->view("Cakes",$data);    }
 
     public function CupCakes()
     {
-        $this->load->view('CupCakes');
+        $this->load->model('ShoppingCart');
+        $data["cupCakes"] = $this->ShoppingCart->fetch_cupCakes();
+        $this->load->view("CupCakes",$data);
     }
 
     public function Pastries()
     {
-        $this->load->view('Pastries');
+        $this->load->model('ShoppingCart');
+        $data["pastries"] = $this->ShoppingCart->fetch_pastries();
+        $this->load->view("Pastries",$data);
     }
 
     public function Breads()
     {
         $this->load->view('Breads');
+    }
+
+    public function Breads2()
+    {
+        $this->load->model('ShoppingCart');
+        $data["breads2"] = $this->ShoppingCart->fetch_all_breads2();
+        $this->load->view("Breads2",$data);
     }
 
     public function Instructions()
@@ -59,11 +76,23 @@ class Welcome extends CI_Controller {
 
     public function Wedding()
     {
-        $this->load->view('Wedding');
+        $this->load->model('ShoppingCart');
+        $data["wCakes"] = $this->ShoppingCart->fetch_wCakes();
+        $this->load->view("Wedding",$data);
     }
 
     public function Birthday()
     {
-        $this->load->view('Birthday');
+        $this->load->model('ShoppingCart');
+        $data["bCakes"] = $this->ShoppingCart->fetch_bCakes();
+        $this->load->view("Birthday",$data);
+    }
+
+    public function ShoppingCart()
+    {
+/*        $this->load->view('ShoppingCart');*/
+        $this->load->model('ShoppingCart');
+        $data["product"] = $this->ShoppingCart->fetch_all();
+        $this->load->view("ShoppingCart",$data);
     }
 }

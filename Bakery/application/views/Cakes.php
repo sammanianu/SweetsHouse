@@ -2,285 +2,76 @@
 
 <br><br><br>
 <div class="topic">
-    <h2>--------------------------------Cakes------------------------------------</h2>
+    <h2 >------------------------------Cakes--------------------------------</h2>
 </div>
+<div>
+    <!--<div class="col-lg-6 col-md-6">-->
+    <div class="table-responsive">
 
-<div class="row" >
+        <?php
+        foreach ($cakes as $row){
 
-    <div class="col-sm-5 col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Red Velvet</h3>
+            echo '
+                <div class="col-md-4">
+                <div class="col-sm-5 col-md-offset-1 col-md-12" style="padding: 16px;
+                background-color: #F5D97E; border: 1px solid #ccc;
+                margin-bottom: 16px; height: 420px" align="center">
+                
                 <a data-target="#myModal001" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/redVelvet.jpg';?>" width="240" height="200">
+               <img src="'.base_url().'css/images/Cakes/'.$row->product_image.'" class="img-thumbnail" ><br>
                 </a>
-            </div>
-            <br>
-        </div>
-    </div>
+                 
+                <h4>'.$row->product_name.'</h4>
+                <h3 class="wy-text-danger">'.$row->product_price.'</h3>
+                
+                <input type="text" name="quantity" class="quantity" id="'.$row->product_id.'"><h4></h3>
 
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Chocolate Chip</h3>
-                <a data-target="#myModal002" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/chocolateChip.jpg';?>" width="240" height="200">
-                </a>
+                <button type="button" name="add_cart" class="btn btn-success add_cart" data-productname="'.$row->product_name.'"
+                        data-price="'.$row->product_price.'" data-productid="'.$row->product_id.'">Add to Cart</button>
+                     
+                        
             </div>
-            <br>
-        </div>
-    </div>
+            </div>
+            
+                ';
+        }
 
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Vanila</h3>
-                <a data-target="#myModal003" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/vanila.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
-    </div>
-</div>
-<br>
-<div class="row">
+        ?>
 
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Lemon</h3>
-                <a data-target="#myModal004" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/lemon.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
     </div>
+    <!--</div>-->
 
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Pink Champagne</h3>
-                <a data-target="#myModal005" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/pinkChampagne.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
-    </div>
+    <script>
 
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Marble</h3>
-                <a data-target="#myModal006" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/marble.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
-    </div>
+        $(document).ready(function () {
+
+            $('.add_cart').click(function () {
+                var product_id = $(this).data("productid");
+                var product_name = $(this).data("productname");
+                var product_price = $(this).data("price");
+                var quantity = $('#'+product_id).val();
+
+                if (quantity !='' && quantity>0){
+
+                    $.ajax({
+                        url:"<?php echo base_url();?>index.php/ShoppingCart/add",
+                        method:"POST",
+                        data:{product_id:product_id,product_name:product_name,product_price:product_price,quantity:quantity},
+                        success:function (data) {
+                            alert("Product added into cart");
+                            $('#cart_details').html(data);
+                            $('#'+product_id).val('');
+                        }
+                    });
+                }
+                else {
+                    alert("Please enter quantity");
+                }
+            });
+            $('#cart_details').load("<?php echo base_url();?>index.php/ShoppingCart/load");
+
+        });
+    </script>
 </div>
 
 <br>
-<div class="row">
-
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Chocolate</h3>
-                <a data-target="#myModal007" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/chocolate.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Carrot</h3>
-                <a data-target="#myModal008" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/carrot.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="col-sm-5 col-md-offset-1 col-md-11">
-            <div class="gallery">
-                <h3>Coconut & Lime</h3>
-                <a data-target="#myModal009" data-toggle="modal">
-                    <img src="<?php echo base_url().'css/images/Cakes/coconutLime.jpg';?>" width="240" height="200">
-                </a>
-            </div>
-            <br>
-        </div>
-    </div>
-</div>
-
-<br><br><br>
-
-
-
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal001" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Red Velvet</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/redVelvet.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal002" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Chocolate Chip</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/chocolateChip.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal003" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Vanila</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/vanila.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal004" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Lemon</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/lemon.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal005" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Pink Champagne</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/pinkChampagne.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal006" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Marble</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/marble.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal007" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Chocolate</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/chocolate.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal008" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Carrot</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/carrot.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="myModal009" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Coconut & Lime</h4>
-            </div>
-            <div class="modal-body">
-                <img src="<?php echo base_url().'css/images/Cakes/coconutLime.jpg';?>" alt="Mountains" width="550" height="400">
-                <p>Some text in the modal.</p>
-            </div>
-        </div>
-    </div>
-</div>

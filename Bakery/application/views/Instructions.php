@@ -8,7 +8,7 @@
 <br>
 
 <div>
-    <h2>------------------Storing & Serving Your Bunt Cake-------------------</h2>
+    <h2>---------------------Storing & Serving Your Cake----------------------</h2>
 </div>
 
 <br>

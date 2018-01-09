@@ -31,6 +31,7 @@
                         <li><a href="<?php echo base_url();?>index.php/Welcome/CupCakes">Cup Cakes</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Pastries">Pastries</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Breads">Breads</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/Breads2">Breads2</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -42,4 +43,6 @@
                 </li>
                 <li><a href="<?php echo base_url();?>index.php/Welcome/Instructions">Instructions</a></li>
                 <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>About Us</a></li>
+                <li><a href='<?php echo base_url();?>index.php/Welcome/ShoppingCart'>Cart</a></li>
+
             </ul>
