@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>/css/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url();?>/css/css/home.css">
 
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,7 +32,7 @@
                         <li><a href="<?php echo base_url();?>index.php/Welcome/CupCakes">Cup Cakes</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Pastries">Pastries</a></li>
                         <li><a href="<?php echo base_url();?>index.php/Welcome/Breads">Breads</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/Breads2">Breads2</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/Breads2">Breads</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -44,5 +45,8 @@
                 <li><a href="<?php echo base_url();?>index.php/Welcome/Instructions">Instructions</a></li>
                 <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>About Us</a></li>
                 <li><a href='<?php echo base_url();?>index.php/Welcome/ShoppingCart'>Cart</a></li>
+                <li><a href='<?php echo base_url();?>index.php/Welcome/Register'>Register</a></li>
+                <li><a href='<?php echo base_url();?>index.php/Welcome/Login'>Login</a></li>
+                <li><a href='<?php echo base_url();?>index.php/Welcome/Delivery'>Delivery</a></li>
 
             </ul>

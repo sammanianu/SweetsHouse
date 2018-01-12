@@ -5,12 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class ShoppingCart extends CI_Controller
 {
 
-    /*public function index()
+    public function index()
     {
         $this->load->model('ShoppingCart');
         $data["product"] = $this->ShoppingCart->fetch_all();
         $this->load->view("ShoppingCart",$data);
-    }*/
+    }
 
     function add(){
         $this->load->library("cart");
@@ -64,6 +64,8 @@ class ShoppingCart extends CI_Controller
                     <th width="40%">Action</th>
     
                 </tr>
+                
+            
            
             ';
         $count = 0;
@@ -89,6 +91,12 @@ class ShoppingCart extends CI_Controller
                      <td>'.$this->cart->total().'</td>
                 </tr>
             </table>
+            
+            
+            <div align="right">
+                <button type="button" id="checkout" class="btn btn-warning" >Checkout</button>
+            </div>
+            
             </div>
             ';
 
