@@ -14,14 +14,11 @@ class LoginModel extends CI_Model
         $respond = $this->db->get('register');
 
         if ($respond->num_rows()==1){
-
             return $respond->row(0);
         }
 
         else{
-
             return false;
-
         }
 
     }

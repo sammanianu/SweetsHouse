@@ -29,6 +29,11 @@ class Welcome extends CI_Controller {
         $this->load->view('Register');
     }
 
+    public function AddProduct()
+    {
+        $this->load->view('AddProduct');
+    }
+
     public function Login()
     {
         $this->load->view('Login');
