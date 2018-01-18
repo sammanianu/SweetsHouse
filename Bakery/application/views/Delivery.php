@@ -1,5 +1,9 @@
 <?php include 'Templates/Header1.php' ?>
-
+<br><br>
+<div class="topic">
+    <h2 >----------------------------Delivery Details-----------------------------</h2>
+</div>
+<br>
 <div class="container">
 
 
@@ -7,10 +11,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-offset-1 col-sm-7" style="background-color: #78C2C3">
-                <h2>Delivery Details</h2>
-
-                <hr>
+            <div class="col-sm-offset-1 col-sm-7" >
 
                 <div >
                     <?php if ($this->session->flashdata('msg')){
@@ -69,7 +70,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Comment</label>
+                            <label for="exampleInputEmail1">Comment</label>
                             <textarea class="form-control" name="comment" rows="5" cols="30"></textarea>
                         </div>
                     </div>

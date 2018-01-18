@@ -33,6 +33,10 @@ class Welcome extends CI_Controller {
     {
         $this->load->view('AddProduct');
     }
+    public function AddAdmin()
+    {
+        $this->load->view('AddAdmin');
+    }
 
     public function Login()
     {

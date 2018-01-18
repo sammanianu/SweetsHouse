@@ -49,6 +49,13 @@
             </div>
         </div>
 
+    <div class="form-group">
+        <label for="lastName" class="col-sm-3 control-label">User Type</label>
+        <div class="col-sm-9">
+            <input type="text"  class="form-control" name="userType" value="Customer" readonly>
+        </div>
+    </div>
+
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
                 <button type="submit" class="btn btn-primary btn-block">Register</button>

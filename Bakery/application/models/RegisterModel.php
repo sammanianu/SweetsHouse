@@ -12,6 +12,7 @@ class RegisterModel extends CI_Model
             'LastName'=> $this->input->post('lastName',TRUE),
             'Email'=> $this->input->post('email',TRUE),
             'Password'=> sha1($this->input->post('password',TRUE)),
+            'UserType'=> $this->input->post('userType',TRUE),
 
         );
 

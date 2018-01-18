@@ -22,7 +22,21 @@
 
             <div class="col-md-6"></div>
             <div class="col-md-offset-4 col-md-2"></div>
-            <h1 style="color: #F03861">Sweets House</h1>
+<!--            <h1 style="color: #F03861">Sweets House</h1>
+-->
+            <nav class="navbar ">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <h1 style="color: #F03861">Sweets House</h1>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/Register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+
 
             <!--Nav Bar-->
             <nav class="nav navbar-nav" >
@@ -47,8 +61,8 @@
                 <li><a href="<?php echo base_url();?>index.php/Welcome/Instructions">Instructions</a></li>
                 <li><a href='<?php echo base_url();?>index.php/Welcome/AboutUs'>AboutUs</a></li>
                 <li><a href='<?php echo base_url();?>index.php/Welcome/ShoppingCart'>Cart</a></li>
-<!--                <li><a href='<?php /*echo base_url();*/?>index.php/Welcome/Delivery'>Delivery</a></li>
--->
+                <li><a href='<?php echo base_url();?>index.php/Welcome/Delivery'>Delivery</a></li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -58,10 +72,5 @@
                     </ul>
                 </li>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href='<?php echo base_url();?>index.php/Welcome/Register'>Register</a></li>
-                    <li><a href='<?php echo base_url();?>index.php/Welcome/Login'>Login</a></li>
-
-                </ul>
 
             </nav>

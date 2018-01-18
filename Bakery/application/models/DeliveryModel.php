@@ -22,9 +22,13 @@ class DeliveryModel extends CI_Model
             'Type'=> $this->input->post('type',TRUE),
         );
 
+        /*$itemData = array(
+            'Name'=>$_POST["product_name"],
+            'Price'=>$_POST["product_price"],
+        );*/
         $r1 = $this->db->insert('delivery',$userData);
-
-        return $r1;
+/*        $r2 = $this->db->insert('deliveryitems',$itemData);*/
+        return ($r1);
 
     }
 }

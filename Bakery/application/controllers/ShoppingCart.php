@@ -92,12 +92,16 @@ class ShoppingCart extends CI_Controller
                 </tr>
             </table>
             
+            <form action="Delivery">
+                <div align="right">
+                    <button type="submit" id="checkout" class="btn btn-warning">Checkout</button>
+                </div>
+            </form>
             
-            <div align="right">
-                <button type="button" id="checkout" class="btn btn-warning" >Checkout</button>
+            
             </div>
             
-            </div>
+            
             ';
 
         if ($count==0){

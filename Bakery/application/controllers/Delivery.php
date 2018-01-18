@@ -45,5 +45,9 @@ class Delivery extends CI_Controller
     }
 
 
+    function ItemDelivery(){
+        $this->load->model('DeliveryItemsModel');
+        $this->DeliveryItemModel->insertItemData();
+    }
 
 }
